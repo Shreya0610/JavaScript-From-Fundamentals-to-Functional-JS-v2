@@ -3,7 +3,7 @@ function start(name, sec) {
   console.log(`Hey ${name}. You are welcome to section ${sec}`);
   section = sec;
 }
-start("Shreya Sharma", "A");
+
 
 function exams() {
   switch (section) {
@@ -14,11 +14,17 @@ function exams() {
         console.log("You are in section B. Your class teacher is Riya");
         break;
         case "C":
-      console.log("You are in section C. Your class teacher is Bianaca");
+      console.log("You are in section C. Your class teacher is Bianca");
       break;
     default:
+      console.log("You are new here.. Pls get your section.")
       break;
   }
   
 }
+start("Shreya Sharma", "A");
+exams();
+start("Bharti", "B");
+exams();
+start("Yash", "C");
 exams();
