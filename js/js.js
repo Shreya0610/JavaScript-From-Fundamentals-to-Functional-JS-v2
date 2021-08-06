@@ -1,5 +1,5 @@
 let section;
-let arr = [1, 2, 3, 4];
+let arr = [11, 2, 3, 4];
 function start(name, sec) {
   console.log(`Hey ${name}. You are welcome to section ${sec}`);
   section = sec;
@@ -28,5 +28,8 @@ exams();
 start("Yash", "C");
 exams();
 
-arr.splice(1, 2);
+arr.splice(1,1);
+console.log(arr);
+
+arr.shift();
 console.log(arr);
