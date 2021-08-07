@@ -28,8 +28,10 @@ exams();
 start("Yash", "C");
 exams();
 
-arr.splice(1,1);
+arr.splice(1, 1);
 console.log(arr);
 
 arr.shift();
 console.log(arr);
+
+console.log("Today was epic");
