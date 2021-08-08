@@ -35,3 +35,5 @@ arr.shift();
 console.log(arr);
 
 console.log("Today was epic");
+
+console.log("Happy to be here");
