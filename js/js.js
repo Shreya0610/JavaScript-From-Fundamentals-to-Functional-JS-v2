@@ -37,3 +37,5 @@ console.log(arr);
 console.log("Today was epic");
 
 console.log("Happy to be here");
+
+console.log("What a tragic day");
