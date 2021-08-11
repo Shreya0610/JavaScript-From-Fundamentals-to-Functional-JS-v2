@@ -39,3 +39,5 @@ console.log("Today was epic");
 console.log("Happy to be here");
 
 console.log("What a tragic day.. bored");
+
+console.log(`The array is ${arr}`);
