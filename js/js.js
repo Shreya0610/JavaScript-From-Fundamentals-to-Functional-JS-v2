@@ -34,12 +34,21 @@ console.log(arr);
 arr.shift();
 console.log(arr);
 
-console.log("Today was epic");
+//objects
+var person = {};
+person.name = "Mrs. White";
+who = person.name;
 
-console.log("Happy to be here");
+console.log(person);
+console.log(who);
 
-console.log("What a tragic day.. bored");
+person.name = "Mr. White";
+console.log(who);
 
-console.log(`The array is ${arr}`);
+//array
+var persons = [];
+persons.name = "Mrs. White";
+var plea = "wouldShe";
 
-console.log("Hyper-activity");
+persons[wouldShe] = "I would never";
+console.log(persons);
