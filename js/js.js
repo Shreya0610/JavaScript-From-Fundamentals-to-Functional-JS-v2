@@ -54,3 +54,4 @@ persons[wouldShe] = "I would never";
 console.log(persons);
 console.log("Hii");
 console.log(person);
+console.log(plea);
