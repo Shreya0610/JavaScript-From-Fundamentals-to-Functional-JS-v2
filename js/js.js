@@ -56,3 +56,4 @@ console.log("Hii");
 console.log(person);
 console.log(plea);
 console.log("Rakhi");
+console.log("NCC camp tired");
