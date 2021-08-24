@@ -1,5 +1,5 @@
 let section;
-let arr = [11, 2, 3, 4];
+let arr = [11, 2, 3, 4, 5, 9, 7];
 function start(name, sec) {
   console.log(`Hey ${name}. You are welcome to section ${sec}`);
   section = sec;
@@ -34,6 +34,12 @@ console.log(arr);
 arr.shift();
 console.log(arr);
 
+console.log(arr.includes(4, -3)); //false
+console.log(arr.includes(4, -4)); //true
+console.log(arr.includes(4, -6)); //true
+console.log(arr.includes(4, 5)); //false
+console.log(arr.includes(4)); //true
+
 //objects
 var person = {};
 person.name = "Mrs. White";
@@ -50,10 +56,5 @@ var persons = [];
 persons.name = "Mrs. White";
 var plea = "wouldShe";
 
-persons[wouldShe] = "I would never";
+persons[plea] = "I would never";
 console.log(persons);
-console.log("Hii");
-console.log(person);
-console.log(plea);
-console.log("Rakhi");
-console.log("NCC camp tired");
