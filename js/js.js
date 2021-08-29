@@ -40,7 +40,7 @@ console.log(arr.includes(4, -6)); //true
 console.log(arr.includes(4, 5)); //false
 console.log(arr.includes(4)); //true
 
-console.log(arr.lastIndexOf(3, 1));
+console.log(arr.lastIndexOf(3, 1)); //doubt
 
 //objects
 var person = {};
