@@ -42,6 +42,7 @@ console.log(arr.includes(4)); //true
 
 console.log(arr.lastIndexOf(3, 1)); //doubt
 
+
 //objects
 var person = {};
 person.name = "Mrs. White";
