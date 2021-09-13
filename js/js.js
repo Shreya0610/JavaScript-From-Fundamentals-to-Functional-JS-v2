@@ -60,3 +60,10 @@ var plea = "wouldShe";
 
 persons[plea] = "I would never";
 console.log(persons);
+
+//destructuring
+var obj = { first: "Shreya", last: "Sharma" };
+var first = obj.first;
+var last = obj.last;
+// or we can simplify this by using destructuring
+let {first , last} = {first:'Shreya', last:'Sharma'}
