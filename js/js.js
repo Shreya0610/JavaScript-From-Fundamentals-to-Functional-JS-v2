@@ -61,9 +61,24 @@ var plea = "wouldShe";
 persons[plea] = "I would never";
 console.log(persons);
 
-//destructuring
+//destructuring of object
 var obj = { first: "Shreya", last: "Sharma" };
 var first = obj.first;
 var last = obj.last;
+
 // or we can simplify this by using destructuring
-let {first , last} = {first:'Shreya', last:'Sharma'}
+let { first1, last1 } = { first1: "Shreya", last1: "Sharma" };
+
+// in array
+let array = [1, 2, 3, 4, 5];
+let [a, , , d] = array;
+console.log(a, d);
+
+let object = {
+  name: "Shreya",
+  rollno : "19EJICS142",
+  subject : "JS"
+}
+//let {name,subject} = object
+let {fno = "123"} = object;
+console.log(fno);
