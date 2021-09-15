@@ -85,5 +85,33 @@ let { fno = "123" } = object;
 console.log(fno);
 
 // for each and each
-// forEach is used as an illterator the same as _.each
+// forEach is used as an illterator the same as _.each but each works on both array and object unlike forEach
 // the format of forEach is .. array.foreach(func) and the format of each is .. _.each(array,func)
+
+// each for both array and object
+const _ = {};
+_.each = function (list, callback) {
+  if (Array.isArray(list)) {
+    for (let i = 0; i < list.length; i++) {
+      callback(list[i], i, list);
+    }
+  } else {
+    for (var key in list) {
+      callback(list[key], key, list);
+    }
+  }
+};
+
+//example for array
+_.each(["Sally", "Georgie", "Porgie"], function (name, i, list) {
+  if (list[i + 1]) {
+    console.log(name, "is younger than", list[i + 1]);
+  } else {
+    console.log(name, "is the oldest");
+  }
+});
+
+// example for object
+_.each(object, function (value, key) {
+  console.log("Hii my name is", value, key);
+});
