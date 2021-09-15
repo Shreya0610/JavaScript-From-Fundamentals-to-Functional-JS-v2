@@ -74,11 +74,16 @@ let array = [1, 2, 3, 4, 5];
 let [a, , , d] = array;
 console.log(a, d);
 
+//object destructuring example
 let object = {
   name: "Shreya",
-  rollno : "19EJICS142",
-  subject : "JS"
-}
+  rollno: "19EJICS142",
+  subject: "JS",
+};
 //let {name,subject} = object
-let {fno = "123"} = object;
+let { fno = "123" } = object;
 console.log(fno);
+
+// for each and each
+// forEach is used as an illterator the same as _.each
+// the format of forEach is .. array.foreach(func) and the format of each is .. _.each(array,func)

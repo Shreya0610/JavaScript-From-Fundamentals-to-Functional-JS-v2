@@ -34,4 +34,3 @@ var suspectList = [];
 for (let i = 0; i < suspects.length; i++) {
     suspect = CreateSuspectObjects(suspects[i]);
 }
-
