@@ -115,3 +115,5 @@ _.each(["Sally", "Georgie", "Porgie"], function (name, i, list) {
 _.each(object, function (value, key) {
   console.log("Hii my name is", value, key);
 });
+
+// _.map()
