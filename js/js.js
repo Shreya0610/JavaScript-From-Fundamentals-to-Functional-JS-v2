@@ -117,3 +117,10 @@ _.each(object, function (value, key) {
 });
 
 // _.map()
+_.map(array, function (no, i) {
+  return `${no} is at position ${i}`;
+});
+// _.filter
+// _.filter(arr , callback){
+//   it will only return the array which returns true to the callback function. which means callback function should return either true or false.
+// }
