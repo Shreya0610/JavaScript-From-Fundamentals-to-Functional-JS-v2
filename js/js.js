@@ -124,3 +124,24 @@ _.map(array, function (no, i) {
 // _.filter(arr , callback){
 //   it will only return the array which returns true to the callback function. which means callback function should return either true or false.
 // }
+
+const constructArr = function () {
+  const arr = Array.prototype.splice.call(arguments); // or we can use Array.from(arguments)
+  // the above statements convert array like object into array i.e. its output if printed will be ["was","it","in"]
+  arr.push("the billiards room??");
+  return arr.join(" "); // output was it in the billiards room
+};
+constructArr("was", "it", "in");
+
+//High order functions
+var increment = function (n) {
+  return n + 1;
+};
+var square = function (n) {
+  return n * n;
+};
+var doMathsSoIDontHaveTo = function (n, func) {
+  return func(n);
+};
+doMathsSoIDontHaveTo(5, square); //25
+doMathsSoIDontHaveTo(4, increment); //5
