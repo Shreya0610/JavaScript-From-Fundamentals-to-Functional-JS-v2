@@ -145,4 +145,3 @@ var doMathsSoIDontHaveTo = function (n, func) {
 };
 doMathsSoIDontHaveTo(5, square); //25
 doMathsSoIDontHaveTo(4, increment); //5
-arr.push(1);
