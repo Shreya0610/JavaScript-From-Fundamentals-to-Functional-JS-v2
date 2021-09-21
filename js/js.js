@@ -120,6 +120,7 @@ _.each(object, function (value, key) {
 _.map(array, function (no, i) {
   return `${no} is at position ${i}`;
 });
+
 // _.filter
 // _.filter(arr , callback){
 //   it will only return the array which returns true to the callback function. which means callback function should return either true or false.
@@ -145,6 +146,7 @@ var doMathsSoIDontHaveTo = function (n, func) {
 };
 doMathsSoIDontHaveTo(5, square); //25
 doMathsSoIDontHaveTo(4, increment); //5
+
 const reduce = function (list, cb, initial) {
   let memo = initial;
   for (let i = 0; i < list.length; i++) {
@@ -159,3 +161,32 @@ const reduce = function (list, cb, initial) {
 };
 reduce([1, 2, 3], (v, sum) => v + sum, 0); //6
 reduce([2, 3, 5], (v, sum) => v + sum); //10
+
+// composing
+const consider = (name) => {
+  return `I think it could be... ${name}`;
+};
+const exclaim = (statement) => {
+  return `${statement}!`;
+};
+const blame = _.compose(consider, exclaim);
+blame("you");
+// ("I think it could be... YOU!")
+
+//scope
+function countClues() {
+  var n = 0;
+  return {
+    count: function () {
+      return n++;
+    },
+    reset: function () {
+      return (n = 0);
+    },
+  };
+}
+counter = countClues(); // it will create a varaible which will contain a object containing 2 functions
+// so we can use it like
+counter.count(); //1
+counter.count(); //2
+counter.reset(); //0
